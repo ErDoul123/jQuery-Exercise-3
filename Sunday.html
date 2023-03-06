@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Is it Sunday?</title>
+	<script>
+
+		function Day() {
+
+			var today = new Date();
+			var day_now = today.getDay();
+			var display = document.getElementById("display_text");
+
+			if (day_now == 0) {
+				display.innerHTML = "It is Sunday!";
+				display.style.color = "green";
+			}
+
+			else {
+				display.innerHTML = "It is not Sunday.";
+				display.style.color = "blue";
+			}
+
+		}
+	</script>
+</head>
+
+<body onload="Day()">
+
+	<h1>Is it Sunday?</h1>
+	<p id="display_text"></p>
+
+</body>
+
+</html>
